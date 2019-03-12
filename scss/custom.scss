@@ -1,0 +1,19 @@
+$body-bg: #fff;
+$body-color: rgb(13,20,27);
+
+$white: rgb(220,221,221);
+$gray-800: rgb(11,15,23);
+$dark-blue: rgb(21,45,88);
+
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
+
+$jumbotron-color: $white;
+$jumbotron-bg: $dark-blue;
+
+.panel {
+    padding: 3rem 0;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
