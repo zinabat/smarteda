@@ -5,47 +5,135 @@
     <link href="public/css/main.css" rel="stylesheet">
 
     <title>Smart EDA</title>
-
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
-<body>
-    <!-- banner -->
-    <header class="jumbotron jumbotron-fluid">
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <a class="navbar-brand" href="#">SmartEDA</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<body data-spy="scroll" data-target="#main-nav" data-offset="0">
+    <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">smart<span class="text-warning">EDA</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Vision</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Product</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#vision">Vision</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#product">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- banner -->
+    <header class="jumbotron jumbotron-fluid d-flex">
+        <div class="container align-self-center">
+            <div class="row">
+                <div class="col-lg-5"></div>
+                <div class="col-lg-7 text-right">
+                    <h1>Artificial intelligence for <span class="badge badge-warning">Electronic Design Automation</span> problems</h1>
+                </div>
             </div>
-        </nav>
-        <div class="container">
-            <h1 class="display-4">Artificial intelligence for <span class="badge badge-warning">Electronic Design Automation</span> problems</h1>
         </div>
     </header>
 
-    <section class="panel">
-        <div class="container">Stuff</div>
+    <section class="panel" id="vision">
+        <div class="container text-right clearfix">
+            <div id="machine-learning-image" class="hexagon float-left"></div>
+            <h2><strong>Machine learning</strong> for congestion estimation & management</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
     </section>
     <section class="panel bg-dark text-white">
-        <div class="container">Stuff</div>
+        <div class="container clearfix">
+            <div id="deep-learning-image" class="hexagon float-right"></div>
+            <h2><strong class="text-warning">Deep learning</strong> for timing-driven placement</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
     </section>
     <section class="panel">
-        <div class="container">Stuff</div>
+        <div class="container text-right clearfix">
+            <div id="reinforcement-image" class="hexagon float-left"></div>
+            <h2><strong>Reinforcement learning</strong> for adaptive & dynamic flows</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
     </section>
+    <section class="panel bg-primary text-white" id="product">
+        <div class="container">
+            <h2 class="text-white">Product</h2>
+            <h3><strong class="text-warning">"SPlace"</strong> - A Machine Learning Driven FPGA Placer</h3>
+        </div>
+    </section>
+    <section class="panel" id="team">
+        <div class="container">
+            <h2>Team</h2>
+            <div class="media">
+                <div class="d-inline text-center mr-3">
+                    <img class="rounded-circle" src="public/img/shawki.jpeg" alt="Shawki Areibi">
+                    <h4 class="mt-1">Shawki Areibi</h4>
+                    <small class="text-muted">Founder and CEO</small>
+                </div>
+                <div class="media-body">
+                    <p>Shawki Areibi received the B.Sc. degree in Computer Engineering from Tripoli
+                    University, Libya in 1984, and the M.A.Sc. and Ph.D. Degrees in Electrical/Computer
+                    Engineering from the University of Waterloo, Ontario, Canada in 1991 and 1995
+                    respectively. From 1997 until 1999 he was an assistant professor in the Electrical and
+                    Computer Engineering department at Ryerson Polytechnic University, Toronto, Canada.
+                    Currently, he is a Professor at the University of Guelph in the School of Engineering
+                    “Computer Engineering” program.</p>
+                    <p>In 2008 he was awarded the Distinguished Professor
+                    Award in Teaching for the College of Engineering and Physical Sciences. His research
+                    interests include VLSI Physical Design Automation, Combinatorial Optimization,
+                    Machine Learning, Reconfigurable Computing Systems, Embedded Systems and Parallel
+                    Processing. Dr. Areibi is a registered professional engineer in Ontario (P.ENG) and a
+                    Senior IEEE member. Dr. Areibi has authored/co-authored over 120 papers in
+                    international journals and conferences. He has received several best paper awards,
+                    including the RAW 2017 best paper award and the Michal Servit Award at FPL 2018. He
+                    served on the technical program committees for several international conferences on
+                    Computer Engineering and Embedded Systems. He also served as a member of the
+                    program committee for GECCO, HPC, DAC and several other IEEE conferences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="panel bg-dark text-white" id="contact">
+        <div class="container">
+            <h2 class="text-warning">Contact</h2>
+            <form method="post" action="contact.php" class="w-50 m-auto">
+                <div class="form-group">
+                    <label for="contactName">Name</label>
+                    <input type="text" id="contactName" name="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Email</label>
+                    <input type="text" id="contactEmail" name="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="contactMessage">Message</label>
+                    <textarea id="contactMessage" name="message" class="form-control"></textarea>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6LcdqqAUAAAAAJgijyrriwQix7Yjg382k-zlwRVd"></div>
+                <div class="text-right">
+                    <button type="submit" class="btn btn-lg btn-outline-light">Send</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="p-2 bg-dark text-white d-flex">
+        <div class="ml-auto">
+            <span class="text-muted">Designed by <a href="http://zinaramirez.com">Zina Ramirez</a> 2019</span>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="public/js/bootstrap.min.js"></script>
 </body>
 </html>
